@@ -79,8 +79,7 @@ public class OAuth2ServerConfig {
 
         @Override
         public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
-            endpoints
-                    .tokenStore(new InMemoryTokenStore())
+            endpoints.tokenStore(new InMemoryTokenStore())
                     .authenticationManager(authenticationManager);
         }
 
